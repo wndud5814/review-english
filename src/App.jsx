@@ -1,5 +1,14 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 const App = () => {
-  return <div className="bg-red-100">Hello, React!</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" />
+        <Route path="/:day" />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
